@@ -1,0 +1,19 @@
+.left-nav {
+    /* min-width: 5rem; */
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+  }
+
+.top-nav{
+    /* position: relative; */
+    left: 5em;
+    margin-right: 5em;
+    z-index: 2;
+}
+  /* .top{
+      z-index: 3;
+  } */
