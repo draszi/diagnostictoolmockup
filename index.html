@@ -51,7 +51,8 @@
     <!-- End of top navbar -->
 
     <!-- Vertical navbar -->
-    <div class="left-nav bg-dark">
+    <nav 
+    class="left-nav bg-dark">
       <!-- <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
         Charts
       </p> -->
@@ -82,11 +83,28 @@
           </a>
         </li>
       </ul>
-    </div>
+    </nav>
     <!-- End of vertical navbar -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <main>
+      <h1>PERFORMANCE MANAGEMENT</h1>
+      <h2>Diagnostic Tool</h2>
+      <div class="filters">
+        Filters
+        <div id="gaugeData">
+          <a href="#" onclick="areaDataChart('qs')">Anal</a>
+          <a href="#" onclick="areaDataChart('b')">Anal</a>
+          <a href="#" onclick="areaDataChart('i')">Anal</a>
+          <a href="#" onclick="areaDataChart('e')">Anal</a>
+          <a href="#" onclick="areaDataChart('p')">Anal</a>
+          <a href="#" onclick="areaDataChart('k')">Anal</a>
+        </div>
+      </div>
+      <!-- <button type="button" onclick="areaDataChart('qs')">Quality Score</button>
+      <button type="button" onclick="areaDataChart('b')">Quality Score</button> -->
+      <button type="button" onclick="areaDataChart('reset')">Reset Data</button> 
+      <div id="areaData"></div>
+    </main>
+    <!-- Scripts links -->
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -102,5 +120,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
