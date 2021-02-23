@@ -24,7 +24,7 @@ d3.json("data/data.json").then(function (data) {
 function areaDataChart(areaChart) {
   if (areaChart == "qs") {
     //
-    d3.json("/data/data.json").then(function(data){
+    d3.json("data.json").then(function(data){
   
       const xScale = 
       d3.scaleBand()
@@ -52,7 +52,7 @@ function areaDataChart(areaChart) {
   } 
 
   else if (areaChart == "b") {
-    d3.json("/data/data.json").then(function(data){
+    d3.json("data.json").then(function(data){
   
       const xScale = 
       d3.scaleBand()
@@ -80,7 +80,7 @@ function areaDataChart(areaChart) {
   } 
   
   else if (areaChart == "i") {
-    d3.json("/data/data.json").then(function(data){
+    d3.json("data.json").then(function(data){
   
       const xScale = 
       d3.scaleBand()
@@ -108,7 +108,7 @@ function areaDataChart(areaChart) {
   } 
   
   else if (areaChart == "e") {
-    d3.json("/data/data.json").then(function(data){
+    d3.json("data.json").then(function(data){
   
       const xScale = 
       d3.scaleBand()
@@ -136,7 +136,7 @@ function areaDataChart(areaChart) {
   } 
   
   else if (areaChart == "p") {
-    d3.json("/data/data.json").then(function(data){
+    d3.json("data.json").then(function(data){
   
       const xScale = 
       d3.scaleBand()
@@ -164,7 +164,7 @@ function areaDataChart(areaChart) {
   } 
   
   else if (areaChart == "k") {
-    d3.json("/data/data.json").then(function(data){
+    d3.json("data.json").then(function(data){
       
       const xScale = 
       d3.scaleBand()
