@@ -1,6 +1,6 @@
 // var newElem = document.createElement("div");
 
-d3.json("data.json").then(function (data) {
+d3.json("data/data.json").then(function (data) {
   // console.log(data.gaugeData);
   // console.log(data.areaData.Basics);
   // console.log(data.areaData.QualityScore[0].date);
