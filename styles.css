@@ -22,17 +22,66 @@ main{
   } */
 
   #gaugeData{
-    display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
-    grid-gap: 10px 20px;
-    max-width: 30vw;
-    width: auto;
+    display: grid; 
+    grid-template-columns: repeat(3, minmax(100px, 1fr)); 
+    grid-gap: 10px 20px; 
+    max-width: 30vw; 
+    width: auto; 
+    height: 300px;
   }
 
   #gaugeData a{
-    background-color: aqua;
+    /* background-color:rgba(15,50,150,0.05); */
+    box-shadow: 3px 2px 3px rgba(0,0,0,0.19);
     border: 1px solid;
     border-radius: .3em;
     margin: 0;
   }
   
+  .mainData{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media(max-width:1200px){
+    .mainData{
+      flex-direction: column;
+    }
+    .container{
+      margin-left: 0 !important;
+      margin-top: 50px !important;
+    }
+    .btn-group{
+      margin-top: 50px !important; 
+    }
+  }
+
+  #resetButton{
+    width: 100px !important;
+  }
+
+  .container{
+    width: 500px;
+    height:300px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+  }
+  
+  .bar{
+    fill: aqua;
+  }
+
+  .topItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .btn-group{
+    margin-top: 0px;
+    right: 20vw;
+  }
+
+  .filters{
+    justify-self: flex-start;
+  }

@@ -51,8 +51,7 @@
     <!-- End of top navbar -->
 
     <!-- Vertical navbar -->
-    <nav 
-    class="left-nav bg-dark">
+    <nav class="left-nav bg-dark">
       <!-- <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">
         Charts
       </p> -->
@@ -88,21 +87,45 @@
     <main>
       <h1>PERFORMANCE MANAGEMENT</h1>
       <h2>Diagnostic Tool</h2>
-      <div class="filters">
-        Filters
-        <div id="gaugeData">
-          <a href="#" onclick="areaDataChart('qs')">Anal</a>
-          <a href="#" onclick="areaDataChart('b')">Anal</a>
-          <a href="#" onclick="areaDataChart('i')">Anal</a>
-          <a href="#" onclick="areaDataChart('e')">Anal</a>
-          <a href="#" onclick="areaDataChart('p')">Anal</a>
-          <a href="#" onclick="areaDataChart('k')">Anal</a>
-        </div>
+      <div class="topItems">
+      <div class="filters">Filters</div>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="day" disabled> Day
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="Week" autocomplete="off"> Week
+        </label>
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="month" autocomplete="off" checked> Month
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="quarter" autocomplete="off"> Quarter
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="half" autocomplete="off"> Half
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="year" autocomplete="off"> Year
+        </label>
       </div>
-      <!-- <button type="button" onclick="areaDataChart('qs')">Quality Score</button>
-      <button type="button" onclick="areaDataChart('b')">Quality Score</button> -->
-      <button type="button" onclick="areaDataChart('reset')">Reset Data</button> 
-      <div id="areaData"></div>
+    </div>
+      <div class='mainData'>
+        <div id="gaugeData">
+          <a href="#" onclick="areaDataChart('qs')"></a>
+          <a href="#" onclick="areaDataChart('b')"></a>
+          <a href="#" onclick="areaDataChart('i')"></a>
+          <a href="#" onclick="areaDataChart('e')"></a>
+          <a href="#" onclick="areaDataChart('p')"></a>
+          <a href="#" onclick="areaDataChart('k')"></a>
+        </div>
+        <!-- <button id='resetButton' type="button" onclick="areaDataChart('reset')">
+          Reset Data
+        </button> -->
+        <!-- <div class="rightItems"> -->
+        <svg class="container"id="areaData"></svg>
+        </div>  
+      </div>
     </main>
     <!-- Scripts links -->
     <script
@@ -121,6 +144,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
